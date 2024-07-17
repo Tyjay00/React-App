@@ -30,8 +30,6 @@ h1 {
   letter-spacing: 0.9px;
   background: white;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   width: fit-content;
 }
 
@@ -161,8 +159,8 @@ h1 {
 }
 
 .light-mode {
-  background-color: rgb(223, 222, 222);
-  color: black !important;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)
 }
 
 .dark-mode {
@@ -203,24 +201,42 @@ h1 {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
+  height: 24px;
   width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: white;
   transition: .4s;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 input:checked + .slider {
   background-color: #ccc;
   border-color: #d5a5a5;
-  border-radius: 100px;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+
+.home-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
 
 
 @media screen and (max-width: 600px) {
